@@ -76,10 +76,10 @@ app.get('/schedule-maintenance', async (req, res) => {
         });
 
     } catch (error) {
-        console.error("Scheduling Engine Error:", error.message);
+        console.error("Scheduling  Error:", error.message);
         res.status(500).json({
             success: false,
-            message: "Failed to generate vehicle maintenance schedule",
+            message: "Failed to generate vehicle maintenanc schedule",
             error: error.response ? error.response.data : error.message
         });
     }
